@@ -61,7 +61,7 @@ python -m pip install -r requirements.txt
 ALLEGRO_PROXY="http://user:pass@host:port" python run.py
 ```
 
-Allegro's DataDome blocks direct connections, so point `ALLEGRO_PROXY` at a residential proxy in Poland. On the first request, Google Chrome opens once to pass DataDome (about 40 seconds); every request after that is plain HTTP.
+Allegro's DataDome blocks direct connections, so point `ALLEGRO_PROXY` at a residential proxy in Poland. On the first request, Google Chrome opens once to pass DataDome (about 40–70 seconds); every request after that is plain HTTP. If Allegro still answers 403, switch the proxy to another IP and restart.
 
 3️⃣ Get your first data:
 ```bash

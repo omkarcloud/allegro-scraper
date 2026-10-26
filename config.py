@@ -9,7 +9,9 @@ environment variable.
                    country=cz / sk) — datacenter proxies get Allegro's captcha.
                    A real Google Chrome on this machine passes DataDome once
                    per marketplace through this proxy, then every request runs
-                   over plain HTTP with the cookie it earned.
+                   over plain HTTP with the cookie it earned. DataDome refuses
+                   some residential IPs outright: if every request answers 403,
+                   switch the proxy to another IP and restart.
 
 Everything else below is a plain constant with a working default — edit it
 here if you need to.
